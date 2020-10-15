@@ -1,6 +1,8 @@
 {
     "colors": {
-        "primary": "green"
+        "primary": "green",
+        "secondary": "orange",
+        "comment": "red"
     },
     "background": "#222244",
     "default": "white",

@@ -33,6 +33,14 @@ class HTMLExportFormatter:
         for highlightKey in self.lang['highlight']:
             if highlightKey in line:
                 line = line.replace(highlightKey, '<p class="color-%s">%s</p>' % (self.lang['highlight'][highlightKey], highlightKey) )
+        if('rules' in self.lang):
+            rules = self.lang['rules']
+            if('startswith' in rules):
+                rule = rules['startswith']
+                for code in rule:
+                    if(line.strip().startswith(code)):
+                        if(rule[code]['area'] == 'line'):
+                            line = '<p class="color-%s">%s</p>' % (rule[code]['color'], line)
         #line = line.replace(' ', '&nbsp;')
         return line + '<br>'
 

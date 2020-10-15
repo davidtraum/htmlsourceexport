@@ -2,6 +2,17 @@
     "lang": "Python",
     "files": ["py"],
     "highlight": {
-        "def": "primary"
+        "class": "primary",
+        "def": "primary",
+        ":": "secondary",
+        "self": "secondary"
+    },
+    "rules": {
+        "startswith": {
+            "#": {
+                "color": "comment",
+                "area": "line"
+            }
+        }
     }
 }
