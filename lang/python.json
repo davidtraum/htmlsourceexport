@@ -1,0 +1,7 @@
+{
+    "lang": "Python",
+    "files": ["py"],
+    "highlight": {
+        "def": "primary"
+    }
+}
